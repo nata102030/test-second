@@ -25,17 +25,10 @@ if (!$is_preview) {
     $text = get_field('text');
     $image = get_field('image');
     $button = get_field('button');
-
-
     ?>
 
     <section id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($class_name); ?>">
-
-   
-        
-
-          <div class="top-page-banner_wrap"> 
-
+        <div class="top-page-banner_wrap">
             <div class="wrap-text">
                 <?php if ($title): ?>
                     <h1 class="top-page-banner-title">
@@ -54,17 +47,11 @@ if (!$is_preview) {
                     </a>
                 <?php endif; ?>
             </div>
-
             <?php if ($image): ?>
                 <div class="wrap-image">
                     <?php echo wp_get_attachment_image($image['id'], 'large'); ?>
                 </div>
             <?php endif; ?>
-
-         </div> 
-
-       
-
-
+        </div>
     </section>
 <?php } ?>

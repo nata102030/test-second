@@ -79,6 +79,7 @@ add_action('init', 'register_acf_blocks');
 function register_acf_blocks()
 {
 	register_block_type(get_template_directory() . '/template-parts/blocks/text-images/top-page-banner');
+	register_block_type(get_template_directory() . '/template-parts/blocks/text-images/image-text-columns');
 	
 }
 
@@ -103,11 +104,13 @@ function allowed_block_types($allowed_blocks, $editor_context)
             'core/buttons',
             'core/separator',
             'acf/top-page-banner',
+			'acf/image-text-columns',
 			
         );
     }
 
 	return array(
 		'acf/top-page-banner',
+		'acf/image-text-columns',
 	);
 }
