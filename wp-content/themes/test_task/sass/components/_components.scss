@@ -1,16 +1,11 @@
 
 @import "header";
 @import "footer";
+@import "blocks/text-images/top-page-banner";
 
   
 * {
     outline: none;
-}
-h1, h2, h3, h4, h5, h6, p{
-  margin: 0;
-}
-p{
-  margin-bottom: 0;
 }
 
 .container{
