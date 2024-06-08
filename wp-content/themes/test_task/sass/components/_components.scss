@@ -1,0 +1,26 @@
+
+@import "header";
+@import "footer";
+
+  
+* {
+    outline: none;
+}
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+p{
+  margin-bottom: 0;
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: 1920px;  
+
+  @media(max-width: $md) {
+    padding: 0 30px;
+  }
+}
+
+

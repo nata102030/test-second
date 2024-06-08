@@ -1,0 +1,12 @@
+a {
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+a:not(.btn){
+	color: $color__dark__50;
+	text-decoration: none;        
+
+}
