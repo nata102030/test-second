@@ -31,32 +31,28 @@ function toggleMenu() {
 }
 
 
-//news slider
-const swiperNewsArray = document.querySelectorAll('.news-slider__slider');
+// slider
+const swiperNewsArray = document.querySelectorAll('.slider__slider');
 swiperNewsArray.forEach((slider) => {
 	const swiperCards = new Swiper(slider, {
 		loop: false,
 		spaceBetween: 16,
-		slidesPerView: 1.1,
+		slidesPerView: 1,
 		navigation: {
-			nextEl: slider.closest('.news-slider').querySelector('.swiper-arrow-next'),
-			prevEl: slider.closest('.news-slider').querySelector('.swiper-arrow-prev'),
+			nextEl: slider.closest('.slider').querySelector('.swiper-arrow-next'),
+			prevEl: slider.closest('.slider').querySelector('.swiper-arrow-prev'),
 		},
-		scrollbar: {
-			el: slider.closest('.news-slider').querySelector('.swiper-scrollbar'),
+		/*scrollbar: {
+			el: slider.closest('.slider').querySelector('.swiper-scrollbar'),
 			//el: ".swiper-scrollbar",
 			draggable: true,
-		},
-		breakpoints: {
-			600: {
-				slidesPerView: 2,
-			},
-			1024: {
-				spaceBetween: 24,
-				//slidesPerView: 2.9,
-				slidesPerView: 3,
-			},
-		}
+		},*/
+
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+		
 	});
 });
 

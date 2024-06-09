@@ -1,13 +1,13 @@
 {
-	"name": "acf/news-slider",
-	"title": "Newsslider",
-	"description": "Newsslider",
-	"category": "sonder",
+	"name": "acf/slider",
+	"title": "Slider",
+	"description": "Slider",
+	"category": "special",
 	"icon": "admin-comments",
 	"keywords": ["Newsslider"],
 	"acf": {
 		"mode": "edit",
-		"renderTemplate": "news-slider.php"
+		"renderTemplate": "slider.php"
 	},
 	"example": {
 		"attributes": {
