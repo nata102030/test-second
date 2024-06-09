@@ -1,0 +1,150 @@
+.section-contact {
+  margin-top: 120px;
+  padding: 120px 0;
+  background-color: $color__main__bg;
+
+  @media (max-width: $md) {
+    margin-top: 80px;
+  }
+
+  &__wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    @media (max-width: $md) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 50%;
+
+    @media (max-width: $md) {
+      flex-basis: 100%;
+    }
+
+    h2 {
+      font-weight: normal;
+      line-height: normal;
+      letter-spacing: 2.8px;
+      color: $color__dark;
+    }
+  }
+
+  &__mail {
+    margin-bottom: 10px;
+
+    a {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: normal;
+      color: $color__accent;
+    }
+  }
+
+  &__address {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: $color__dark;
+  }
+
+  &__form {
+    flex-basis: 50%;
+
+    @media (max-width: $md) {
+      flex-basis: 100%;
+    }
+
+    .wpcf7-form {
+      &-control-wrap {
+        display: block;
+
+        input,
+        textarea {
+          border-radius: 6px;
+          border: solid 1px $color__dark__10;
+          background-color: $color__background;
+          padding: 16px;
+          width: 100%;
+          font-size: 16px;
+          font-weight: 300;
+          line-height: 1.5;
+          letter-spacing: normal;
+          color: $color__black;
+        }
+
+        textarea {
+          height: 100px;
+        }
+      }
+
+      .wpcf7-form-control-wrap + .wpcf7-form-control-wrap {
+        margin-top: 15px;
+      }
+
+      .contact-section__button {
+        margin-top: 30px;
+
+        input {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: normal;
+          text-align: center;
+          flex-grow: 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 10px;
+          padding: 20px 61px 20px 90px;
+          border-radius: 41px;
+          box-shadow: 0 12px 24px 0 rgba(58, 149, 117, 0.28);
+          background-color: $color__accent;
+          max-width: max-content;
+          color: $color__background;
+          border: none;
+        }
+
+        p {
+          position: relative;
+          width: max-content;
+        }
+
+        svg {
+          position: absolute;
+          background: #fff;
+          top: 50%;
+          left: 68px;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(0, -50%);
+          width: 16.4px;
+          height: 11.5px;
+        }
+      }
+
+      .wpcf7-spinner {
+        display: none;
+      }
+    }
+  }
+
+  .contact-section__input > p {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      display: flex;
+    }
+  }
+}

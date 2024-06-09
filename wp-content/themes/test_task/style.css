@@ -1635,6 +1635,181 @@ textarea {
   background-color: #69AE96;
 }
 
+.section-contact {
+  margin-top: 120px;
+  padding: 120px 0;
+  background-color: #F5F9FA;
+}
+@media (max-width: 768px) {
+  .section-contact {
+    margin-top: 80px;
+  }
+}
+.section-contact__wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 30px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 30px;
+}
+@media (max-width: 768px) {
+  .section-contact__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.section-contact__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+@media (max-width: 768px) {
+  .section-contact__text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+.section-contact__text h2 {
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: 2.8px;
+  color: #1F1F1F;
+}
+.section-contact__mail {
+  margin-bottom: 10px;
+}
+.section-contact__mail a {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #69AE96;
+}
+.section-contact__address {
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #1F1F1F;
+}
+.section-contact__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+@media (max-width: 768px) {
+  .section-contact__form {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+.section-contact__form .wpcf7-form-control-wrap {
+  display: block;
+}
+.section-contact__form .wpcf7-form-control-wrap input,
+.section-contact__form .wpcf7-form-control-wrap textarea {
+  border-radius: 6px;
+  border: solid 1px #c9ccd4;
+  background-color: #fff;
+  padding: 16px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #000;
+}
+.section-contact__form .wpcf7-form-control-wrap textarea {
+  height: 100px;
+}
+.section-contact__form .wpcf7-form .wpcf7-form-control-wrap + .wpcf7-form-control-wrap {
+  margin-top: 15px;
+}
+.section-contact__form .wpcf7-form .contact-section__button {
+  margin-top: 30px;
+}
+.section-contact__form .wpcf7-form .contact-section__button input {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+  padding: 20px 61px 20px 90px;
+  border-radius: 41px;
+  -webkit-box-shadow: 0 12px 24px 0 rgba(58, 149, 117, 0.28);
+          box-shadow: 0 12px 24px 0 rgba(58, 149, 117, 0.28);
+  background-color: #69AE96;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  color: #fff;
+  border: none;
+}
+.section-contact__form .wpcf7-form .contact-section__button p {
+  position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.section-contact__form .wpcf7-form .contact-section__button svg {
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  left: 68px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
+  width: 16.4px;
+  height: 11.5px;
+}
+.section-contact__form .wpcf7-form .wpcf7-spinner {
+  display: none;
+}
+.section-contact .contact-section__input > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section-contact .contact-section__input > p span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 * {
   outline: none;
 }

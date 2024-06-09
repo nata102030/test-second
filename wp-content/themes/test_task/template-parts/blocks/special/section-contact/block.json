@@ -1,0 +1,20 @@
+{
+	"name": "acf/section-contact",
+	"title": "Section contact",
+	"description": "Section contact",
+	"category": "special",
+	"icon": "admin-comments",
+	"keywords": ["contact"],
+	"acf": {
+		"mode": "edit",
+		"renderTemplate": "section-contact.php"
+	},
+	"example": {
+		"attributes": {
+			"mode": "preview",
+			"data": {
+				"gutenberg_preview_image": true
+			}
+		}
+	}
+}

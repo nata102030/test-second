@@ -81,6 +81,7 @@ function register_acf_blocks()
 	register_block_type(get_template_directory() . '/template-parts/blocks/text-images/top-page-banner');
 	register_block_type(get_template_directory() . '/template-parts/blocks/text-images/image-text-columns');
 	register_block_type(get_template_directory() . '/template-parts/blocks/special/slider');
+	register_block_type(get_template_directory() . '/template-parts/blocks/special/section-contact');
 	
 }
 
@@ -107,6 +108,7 @@ function allowed_block_types($allowed_blocks, $editor_context)
             'acf/top-page-banner',
 			'acf/image-text-columns',
 			'acf/slider',
+			'acf/section-contact',
         );
     }
 
@@ -114,5 +116,6 @@ function allowed_block_types($allowed_blocks, $editor_context)
 		'acf/top-page-banner',
 		'acf/image-text-columns',
 		'acf/slider',
+		'acf/section-contact',
 	);
 }
