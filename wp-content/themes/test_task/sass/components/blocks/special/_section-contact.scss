@@ -5,6 +5,7 @@
 
   @media (max-width: $md) {
     margin-top: 80px;
+    padding: 80px 0;
   }
 
   &__wrap {
@@ -42,6 +43,10 @@
   &__mail {
     margin-bottom: 10px;
 
+    @media (max-width: $md) {
+      margin: 15px 0;
+    }
+
     a {
       font-size: 20px;
       font-weight: normal;
@@ -76,12 +81,20 @@
           border: solid 1px $color__dark__10;
           background-color: $color__background;
           padding: 16px;
-          width: 100%;
+          width: auto;
           font-size: 16px;
           font-weight: 300;
           line-height: 1.5;
           letter-spacing: normal;
           color: $color__black;
+
+          &:focus{
+            border: solid 1px $color__accent_dark;
+          }
+
+          &:disabled{
+            background-color: $color__btn_disabled;
+          }
         }
 
         textarea {
@@ -113,7 +126,20 @@
           background-color: $color__accent;
           max-width: max-content;
           color: $color__background;
-          border: none;
+          border: solid 2px $color__accent;
+
+          &:hover{
+            background-color: $color__accent_dark;
+          }
+        
+          &:focus{
+            box-shadow: 0 0 0 0 $color__btn_focus;
+            border: solid 2px $color__accent_dark;
+          }
+        
+          &:disabled{
+            background-color: $color__btn_disabled;
+          }
         }
 
         p {
@@ -145,6 +171,8 @@
 
     span {
       display: flex;
+      flex-direction: column;
+      gap: 5px;
     }
   }
 }

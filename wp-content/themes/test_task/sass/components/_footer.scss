@@ -1,1 +1,63 @@
-  
+.site-footer {
+  padding: 106px 0 100px 0;
+  @media (max-width: $md) {
+    padding: 50px 0;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  ul.menu {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    gap: 53px;
+    align-items: flex-start;
+
+    @media (max-width: $xl) {
+      gap: 26px;
+    }
+
+    > li {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      position: relative;
+
+      @media (min-width: $lg) {
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+        text-align: inherit;
+        border-bottom: none;
+      }
+
+      > a {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 140%;
+        transition: all 0.3s ease;
+        position: relative;
+        line-height: normal;
+        letter-spacing: normal;
+        color: $color__dark__30;
+        font-weight: normal;
+
+        &:hover {
+          color: $color__dark;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .sub-menu {
+      display: none;
+    }
+  }
+}

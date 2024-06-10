@@ -40,7 +40,6 @@ if (!$is_preview) {
                         <?php echo $text; ?>
                     </div>
                 <?php endif; ?>
-
                 <?php if ($button): ?>
                     <a href="<?php echo $button['url']; ?>" class="btn">
                         <?php echo $button['title']; ?>

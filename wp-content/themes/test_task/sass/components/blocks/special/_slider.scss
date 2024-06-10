@@ -44,6 +44,17 @@
             stroke: $color__accent;
           }
         }
+
+        &:focus {
+          circle {
+            stroke: $color__accent_dark;
+            stroke-width: 2px;
+          }
+        }
+
+        &:disabled {
+          fill: $color__btn_disabled;
+        }
       }
 
       &.swiper-button-disabled {

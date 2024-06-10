@@ -15,4 +15,18 @@
   background-color: $color__accent;
   max-width: max-content;
   color: $color__background;
+  border: solid 2px $color__accent;
+
+  &:hover{
+    background-color: $color__accent_dark;
+  }
+
+  &:focus{
+    box-shadow: 0 0 0 0 $color__btn_focus;
+    border: solid 2px $color__accent_dark;
+  }
+
+  &:disabled{
+    background-color: $color__btn_disabled;
+  }
   }

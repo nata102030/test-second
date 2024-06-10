@@ -52,5 +52,6 @@ if (!$is_preview) {
                     </div>
                 <?php endif; ?>
             </div>
+        </div>
     </section>
 <?php } ?>
